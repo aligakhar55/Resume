@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f3f4f6, #ffffff);
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .navbar a:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    transform: translateX(5px);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin: 50px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+  }
+
+  h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #4CAF50;
+    margin: 10px auto 0;
+  }
+
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .education-box {
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .education-section {
+    margin-bottom: 20px;
+  }
+
+  .education-section h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .education-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .education-section ul li {
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html"><b>BS Computer Science | Hussain Ali</b></a>
+  <div class="dropdown">
+    <button class="dropbtn">Home</button>
+    <div class="dropdown-content">
+      <a href="portfoli.html">Biosketch</a>
+      <a href="contact.html">Contact</a>
+      <a href="CV.html">CV</a>
+      <a href="Educational.html">Education Details</a>
+    </div>
+  </div>
+  <a href="thesis.html">Abstract of Thesis</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="awards.html">Awards & Honors</a>
+  <div class="dropdown">
+    <button class="dropbtn">More</button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+
+<h1>Educational Background</h1>
+
+<div class="education-container">
+  <div class="education-box">
+    <div class="education-section">
+      <h2>Bachelor's Degree</h2>
+      <ul>
+        <li><b>Degree:</b> BS Computer Science</li>
+        <li><b>Institution:</b> University of Azad Jammu and Kashmir</li>
+        <li><b>Year:</b> 2020 - 2024</li>
+      </ul>
+    </div>
+
+    <div class="education-section">
+      <h2>Higher Secondary Education</h2>
+      <ul>
+        <li><b>Degree:</b> FSC </li>
+        <li><b>Institution:</b> Read Foundation Science College Hattian Bala</li>
+        <li><b>Year:</b> 2020</li>
+      </ul>
+    </div>
+
+    <div class="education-section">
+      <h2>Secondary Education</h2>
+      <ul>
+        <li><b>Degree:</b> Matric (Science)</li>
+        <li><b>Institution:</b> Read Foundation Science College Hattian Bala</li>
+        <li><b>Year:</b> 2018</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

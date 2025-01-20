@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .navbar a:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    transform: translateX(5px);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin: 50px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+  }
+
+  h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #4CAF50;
+    margin: 10px auto 0;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .contact-box {
+    max-width: 600px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .contact-box p {
+    margin: 10px 0;
+  }
+
+  .contact-box a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html"><b>BS Computer Science | Hussain Ali</b></a>
+  <div class="dropdown">
+    <button class="dropbtn">Home</button>
+    <div class="dropdown-content">
+      <a href="portfoli.html">Biosketch</a>
+      <a href="contact.html">Contact</a>
+      <a href="CV.html">CV</a>
+      <a href="Educational.html">Education Details</a>
+    </div>
+  </div>
+  <a href="thesis.html">Abstract of Thesis</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="awards.html">Awards & Honors</a>
+  <div class="dropdown">
+    <button class="dropbtn">More</button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+
+<h1>Contact</h1>
+
+<div class="contact-container">
+  <div class="contact-box">
+    <p><b>Email:</b> <a href="mailto:aligakhar55@gmail.com">aligakhar55@gmail.com</a></p>
+    <p><b>Phone:</b> +92 3477879619</p>
+    <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/hussain-ali-49bb09206" target="_blank">LinkedIn Profile</a></p>
+    <p><b>Address:</b> I10/3,Islamabad</p>
+  </div>
+</div>
+
+</body>
+</html>
